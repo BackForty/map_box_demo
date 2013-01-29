@@ -16,7 +16,40 @@
 		C32713C816B812BB004F09ED /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C32713C716B812BB004F09ED /* Default.png */; };
 		C32713CA16B812BB004F09ED /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C32713C916B812BB004F09ED /* Default@2x.png */; };
 		C32713CC16B812BB004F09ED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C32713CB16B812BB004F09ED /* Default-568h@2x.png */; };
+		C32713DF16B81390004F09ED /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32713DE16B81390004F09ED /* CoreLocation.framework */; };
+		C32713E116B8139B004F09ED /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32713E016B8139B004F09ED /* QuartzCore.framework */; };
+		C32713E316B813A2004F09ED /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C32713E216B813A2004F09ED /* libsqlite3.dylib */; };
+		C32713E516B813A7004F09ED /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C32713E416B813A7004F09ED /* libz.dylib */; };
+		C32713E616B813BF004F09ED /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32713DB16B8137C004F09ED /* libMapBox.a */; };
+		C32713E916B813FB004F09ED /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C32713DD16B8137C004F09ED /* MapBox.bundle */; };
+		C32713EE16B8143D004F09ED /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32713EC16B8143D004F09ED /* MapController.m */; };
+		C32713EF16B8143D004F09ED /* MapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32713ED16B8143D004F09ED /* MapController.xib */; };
+		C32713F116B836A5004F09ED /* Baltimore.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = C32713F016B82947004F09ED /* Baltimore.mbtiles */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C32713DA16B8137C004F09ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C32713D216B8137C004F09ED /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17F31EFA1331050A00122B16;
+			remoteInfo = MapView;
+		};
+		C32713DC16B8137C004F09ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C32713D216B8137C004F09ED /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD6A83751644A20C0097F31F;
+			remoteInfo = Resources;
+		};
+		C32713E716B813EF004F09ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C32713D216B8137C004F09ED /* MapView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C974130E8A19B2007D16AD;
+			remoteInfo = MapView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C32713B116B812BB004F09ED /* MapBoxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapBoxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +65,15 @@
 		C32713C716B812BB004F09ED /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C32713C916B812BB004F09ED /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C32713CB16B812BB004F09ED /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C32713D216B8137C004F09ED /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "mapbox-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
+		C32713DE16B81390004F09ED /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C32713E016B8139B004F09ED /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C32713E216B813A2004F09ED /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C32713E416B813A7004F09ED /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C32713EB16B8143D004F09ED /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		C32713EC16B8143D004F09ED /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		C32713ED16B8143D004F09ED /* MapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapController.xib; sourceTree = "<group>"; };
+		C32713F016B82947004F09ED /* Baltimore.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = Baltimore.mbtiles; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +84,11 @@
 				C32713B616B812BB004F09ED /* UIKit.framework in Frameworks */,
 				C32713B816B812BB004F09ED /* Foundation.framework in Frameworks */,
 				C32713BA16B812BB004F09ED /* CoreGraphics.framework in Frameworks */,
+				C32713DF16B81390004F09ED /* CoreLocation.framework in Frameworks */,
+				C32713E116B8139B004F09ED /* QuartzCore.framework in Frameworks */,
+				C32713E516B813A7004F09ED /* libz.dylib in Frameworks */,
+				C32713E316B813A2004F09ED /* libsqlite3.dylib in Frameworks */,
+				C32713E616B813BF004F09ED /* libMapBox.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +115,11 @@
 		C32713B416B812BB004F09ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C32713E416B813A7004F09ED /* libz.dylib */,
+				C32713E216B813A2004F09ED /* libsqlite3.dylib */,
+				C32713E016B8139B004F09ED /* QuartzCore.framework */,
+				C32713DE16B81390004F09ED /* CoreLocation.framework */,
+				C32713D216B8137C004F09ED /* MapView.xcodeproj */,
 				C32713B516B812BB004F09ED /* UIKit.framework */,
 				C32713B716B812BB004F09ED /* Foundation.framework */,
 				C32713B916B812BB004F09ED /* CoreGraphics.framework */,
@@ -78,8 +130,10 @@
 		C32713BB16B812BB004F09ED /* MapBoxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C32713EA16B8142C004F09ED /* Controllers */,
 				C32713C416B812BB004F09ED /* AppDelegate.h */,
 				C32713C516B812BB004F09ED /* AppDelegate.m */,
+				C32713F016B82947004F09ED /* Baltimore.mbtiles */,
 				C32713BC16B812BB004F09ED /* Supporting Files */,
 			);
 			path = MapBoxDemo;
@@ -99,6 +153,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C32713D316B8137C004F09ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C32713DB16B8137C004F09ED /* libMapBox.a */,
+				C32713DD16B8137C004F09ED /* MapBox.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C32713EA16B8142C004F09ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C32713EB16B8143D004F09ED /* MapController.h */,
+				C32713EC16B8143D004F09ED /* MapController.m */,
+				C32713ED16B8143D004F09ED /* MapController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +186,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C32713E816B813EF004F09ED /* PBXTargetDependency */,
 			);
 			name = MapBoxDemo;
 			productName = MapBoxDemo;
@@ -138,6 +212,12 @@
 			mainGroup = C32713A616B812BB004F09ED;
 			productRefGroup = C32713B216B812BB004F09ED /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C32713D316B8137C004F09ED /* Products */;
+					ProjectRef = C32713D216B8137C004F09ED /* MapView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C32713B016B812BB004F09ED /* MapBoxDemo */,
@@ -145,15 +225,35 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		C32713DB16B8137C004F09ED /* libMapBox.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMapBox.a;
+			remoteRef = C32713DA16B8137C004F09ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C32713DD16B8137C004F09ED /* MapBox.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MapBox.bundle;
+			remoteRef = C32713DC16B8137C004F09ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		C32713AF16B812BB004F09ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32713F116B836A5004F09ED /* Baltimore.mbtiles in Resources */,
+				C32713E916B813FB004F09ED /* MapBox.bundle in Resources */,
 				C32713C016B812BB004F09ED /* InfoPlist.strings in Resources */,
 				C32713C816B812BB004F09ED /* Default.png in Resources */,
 				C32713CA16B812BB004F09ED /* Default@2x.png in Resources */,
 				C32713CC16B812BB004F09ED /* Default-568h@2x.png in Resources */,
+				C32713EF16B8143D004F09ED /* MapController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,10 +266,19 @@
 			files = (
 				C32713C216B812BB004F09ED /* main.m in Sources */,
 				C32713C616B812BB004F09ED /* AppDelegate.m in Sources */,
+				C32713EE16B8143D004F09ED /* MapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C32713E816B813EF004F09ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MapView;
+			targetProxy = C32713E716B813EF004F09ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C32713BE16B812BB004F09ED /* InfoPlist.strings */ = {
@@ -238,6 +347,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapBoxDemo/MapBoxDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/mapbox-ios-sdk/MapView/**";
 				INFOPLIST_FILE = "MapBoxDemo/MapBoxDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -249,6 +359,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapBoxDemo/MapBoxDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/mapbox-ios-sdk/MapView/**";
 				INFOPLIST_FILE = "MapBoxDemo/MapBoxDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
