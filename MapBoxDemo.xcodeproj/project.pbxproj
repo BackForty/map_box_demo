@@ -385,6 +385,7 @@
 				C32713D116B812BB004F09ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

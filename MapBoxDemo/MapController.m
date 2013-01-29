@@ -17,16 +17,20 @@
 
 // Setup
 - (void)viewDidLoad {
-  RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithMapID:@"flipsasser.map-tlt4zah7"];
+  // Uncomment for local source:
 //  NSURL *tileSetURL = [[NSBundle mainBundle] URLForResource:@"Baltimore.mbtiles" withExtension:nil];
-//  NSLog(@"Tiles: %@", tileSetURL);
 //  RMMBTilesSource *localSource = [[RMMBTilesSource alloc] initWithTileSetURL:tileSetURL];
+//  self.mapView = [[RMMapView alloc] initWithFrame:self.view.frame andTilesource:localSource];
+
+  // Uncomment for remote source:
+  RMMapBoxSource *onlineSource = [[RMMapBoxSource alloc] initWithMapID:@"flipsasser.map-tlt4zah7"];
   self.mapView = [[RMMapView alloc] initWithFrame:self.view.frame andTilesource:onlineSource];
+
   self.mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-  self.mapView.hideAttribution = true;
-  self.mapView.showLogoBug = false;
-//  self.mapView.tileSource = onlineSource;
-//  self.mapView.tileSource = localSource;
+  // If you're not using OSM data or have a MapBox license that allows you to remove their logo
+//  self.mapView.hideAttribution = true;
+//  self.mapView.showLogoBug = false;
+
   [self.view addSubview:self.mapView];
   [super viewDidLoad];
 }
